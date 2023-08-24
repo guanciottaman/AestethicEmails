@@ -10,5 +10,13 @@
         <nav>
             <h1>Aestethic Emails</h1>
         </nav>
+        {% if not username and not password %}
+        <div class="login">
+            <form method="POST" name="login">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter your username">
+            </form>
+        </div>
+        {% endif %}
     </body>
 </html>
